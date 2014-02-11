@@ -25,7 +25,7 @@ public class Startup {
         TipCalculator FoodTip = new FoodServiceTipCalculator(ServiceQuality.GOOD,50.00);
         TipCalculator BaggageTip = new BaggageServiceTipCalculator(ServiceQuality.POOR,3);
          
-        Calculator calc = new Calculator();
+        TipCalculatorService calc = new TipCalculatorService();
         
         System.out.println("Your food tip should be :" +
                 calc.getTip(FoodTip));
