@@ -13,7 +13,14 @@ import dip.lab1.Employee;
  * @author Justin
  */
 public class TipCalculatorService {
-    public double getTip(TipCalculator t) {
-       return t.calculateTip();
+ 
+    private TipCalculator calculator;
+
+    public TipCalculatorService(TipCalculator Calculator) {
+        this.calculator = Calculator;
+    }
+    
+    public void getTip(){
+        calculator.calculateTip();
     }
 }

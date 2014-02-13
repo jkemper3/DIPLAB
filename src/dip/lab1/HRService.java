@@ -3,7 +3,14 @@ package dip.lab1;
 
 
 public class HRService {
-    public double getAnnualCompensationForEmployee(Employee e) {
-       return e.getAnnualWages();
+   
+    private Employee employee;
+
+    public HRService(Employee employee) {
+        this.employee = employee;
+    }
+    
+   public void getYearlyWage(){
+       employee.getAnnualWages();
     }
 }
