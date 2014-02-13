@@ -14,11 +14,11 @@ import java.util.Random;
  */
 public class RandomMessage implements MessageReader {
     private String Randommessage [] = {
-        "Hello World",
-        "Java Rocks",
-        "Hope I pass"
+        "Good Morning",
+        "Good Afternoon",
+        "Good Night"
     };
-
+    
     public String[] getRandommessage() {
         return Randommessage;
     }

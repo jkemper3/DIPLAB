@@ -21,10 +21,5 @@ public class CommunicationService{
         this.output = output;
     }
     
-   
-    
-    public void produceMessage() {
-        output.sendMessage(input);
-    }
-} 
+}
 
