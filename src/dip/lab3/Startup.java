@@ -13,15 +13,12 @@ package dip.lab3;
 public class Startup {
     public static void main(String[] args) {
         
-       MessageReader reader = new RandomMessageReader();
+       MessageReader reader = new GuiMessageReader();
        MessageWriter writer = new GuiWriter();
        
        CommunicationService c = new CommunicationService(reader,writer);
        
-        c.copyMessage();
-        
-       
-     
+        c.copyMessage();       
     }
   
 }

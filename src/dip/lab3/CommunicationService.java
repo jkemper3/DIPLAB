@@ -13,17 +13,16 @@ package dip.lab3;
 public class CommunicationService{
     
     
-    private MessageReader messageInput;
-    private MessageWriter messageOutput;
+    private  MessageReader messageReader;
+    private  MessageWriter messageWriter;
 
-    public CommunicationService(MessageReader input, MessageWriter output) {
-        this.messageInput = input;
-        this.messageOutput = output;
+    public CommunicationService(MessageReader reader, MessageWriter writer) {
+        this.messageReader = reader;
+        this.messageWriter = writer;
     }
     
     public void copyMessage(){
-        String message = messageInput.getMessage();
-        messageOutput.writeMessage(message);
+        messageWriter.writeMessage(messageReader.getMessage());
         
         
     }

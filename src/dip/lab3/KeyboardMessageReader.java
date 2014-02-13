@@ -13,15 +13,17 @@ import java.util.Scanner;
  * @author jkemper3
  */
 public class KeyboardMessageReader implements MessageReader {
+    
     private String keyboardMessage;
 
     
+    @Override
     public String getMessage(){
         
        Scanner input = new Scanner (System.in);
 
         System.out.print("Enter Message: ");
-        keyboardMessage = input.toString();
+        keyboardMessage = input.nextLine();
 
          return keyboardMessage;
     }

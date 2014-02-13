@@ -13,23 +13,23 @@ import java.util.Random;
  * @author jkemper3
  */
 public class RandomMessageReader implements MessageReader {
-    private String Randommessage [] = {
+    private String randomMessage [] = {
         "Good Morning",
         "Good Afternoon",
         "Good Night"
     };
     
     public String[] getRandommessage() {
-        return Randommessage;
+        return randomMessage;
     }
 
     public final void setRandommessage(String[] Randommessage) {
-        this.Randommessage = Randommessage;
+        this.randomMessage = Randommessage;
     }
       
    @ Override 
     public String getMessage(){
         Random r = new Random(System.nanoTime());
-        return Randommessage[r.nextInt(3)];
+        return randomMessage[r.nextInt(3)];
     }
 }
