@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author jkemper3
  */
-public class KeyboardMessage {
+public class KeyboardMessageReader implements MessageReader {
     private String keyboardMessage;
 
     
@@ -23,7 +23,7 @@ public class KeyboardMessage {
         System.out.print("Enter Message: ");
         keyboardMessage = input.toString();
 
-    return keyboardMessage;
+         return keyboardMessage;
     }
     
 

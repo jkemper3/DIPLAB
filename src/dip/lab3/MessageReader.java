@@ -11,5 +11,6 @@ package dip.lab3;
  * @author jkemper3
  */
 public interface MessageReader {
+    
     public abstract String getMessage();
 }

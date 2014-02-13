@@ -11,5 +11,5 @@ package dip.lab3;
  * @author jkemper3
  */
 public interface MessageWriter {
-    public void writeMessage(MessageReader messageInput);
+    public abstract void writeMessage(String message);
 }

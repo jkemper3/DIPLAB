@@ -12,7 +12,7 @@ import java.util.Random;
  *
  * @author jkemper3
  */
-public class RandomMessage implements MessageReader {
+public class RandomMessageReader implements MessageReader {
     private String Randommessage [] = {
         "Good Morning",
         "Good Afternoon",
