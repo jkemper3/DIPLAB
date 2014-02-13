@@ -22,14 +22,14 @@ public class Startup {
  
     public static void main(String[] args) {
         
-        TipCalculator FoodTip = new FoodServiceTipCalculator(ServiceQuality.GOOD,50.00);
-        TipCalculator BaggageTip = new BaggageServiceTipCalculator(ServiceQuality.POOR,3);
+        TipCalculator FoodTip = new FoodServiceTipCalculator(50.0,.15);
+        TipCalculator BaggageTip = new BaggageServiceTipCalculator(.33,4);
          
         TipCalculatorService calc = new TipCalculatorService();
         
-        System.out.println("Your food tip should be :" +
+        System.out.println("Your food total with tip should be: " +
                 calc.getTip(FoodTip));
-        System.out.println("Your baggage tip should be :" + 
+        System.out.println("Your baggage total with tip should be: " + 
                 calc.getTip(BaggageTip));
                 
        
